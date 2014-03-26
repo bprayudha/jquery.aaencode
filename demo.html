@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery aaencode demo</title>
+  <meta charset="utf-8">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="jquery.aaencode.min.js"></script>
+  <style type="text/css">
+    textarea {
+      min-width:500px;
+      max-width: 500px;
+      min-height: 150px;
+      max-height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div><h1>JQuery aaencode demonstration</h1></div>
+  <div><textarea id="original" placeholder="Write some javascript here"></textarea></div>
+  <div><button id="btn-encode">Encode</button></div><br>
+  <div><textarea id="obfuscated" readonly></textarea></div>
+  <div><button id="eval">Eval encoded script</button></div>
+  
+  <script languange="javascript" type="text/javascript">
+    $(document).ready(function() {
+      
+      // encode original script 
+      $("#btn-encode").on("click",function() {
+        $("#obfuscated").val(function() {
+          return $("#original").aaencode();
+        });
+      });
+
+      // eval encoded scipt
+      $("#eval").on("click",function() {
+        eval($("#obfuscated").val());
+      });
+      
+    });
+  </script>
+
+</body>
+</html>
