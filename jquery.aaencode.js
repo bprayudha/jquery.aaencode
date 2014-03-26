@@ -1,9 +1,10 @@
 /*
- * jQuery aaencode plugin
+ * jQuery aaencode plugin v0.1.1
  * 
  * Description: jQuery plugin to obfuscate JavaScript into smiley faces.  
  *
  * Based on aaencode function, written by Yosuke Hasegawa.
+ *
  * @author  : Bayu Prayudha
  * @twitter : @bprayudha
  *
