@@ -1,0 +1,26 @@
+{
+    "name": "aaencode",
+    "title": "jQuery aaencode",
+    "description": "jQuery plugin for obfuscate JavaScript into smiley faces.",
+    "keywords": [
+        "aaencode",
+        "obfuscator",
+        "smiley"
+    ],
+    "version": "0.1.1",
+    "author": {
+        "name": "Bayu Prayudha",
+        "url": "https://twitter.com/bprayudha"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "bugs": "https://github.com/bprayudha/jquery.aaencode/issues",
+    "homepage": "https://github.com/bprayudha/jquery.aaencode",
+    "dependencies": {
+        "jquery": ">=1.7.0"
+    }
+}
